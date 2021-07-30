@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{CF9A9D12-0E41-4BA7-955D-0169459EE325}</ProjectGuid>
+    <RootNamespace>cgp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <ProjectName>server</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\..\..\propersheet\ps2017.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <OpenMPSupport>true</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Auto3d\Auto3DData.cpp" />
+    <ClCompile Include="..\..\..\Auto3d\Auto3dLoader.cpp" />
+    <ClCompile Include="..\..\..\Basic\SafeGuard.cpp" />
+    <ClCompile Include="..\..\..\Basic\ToDst.cpp" />
+    <ClCompile Include="..\..\..\Beauty\Beauty35.cpp" />
+    <ClCompile Include="..\..\..\Bvh\Bvh11.cpp" />
+    <ClCompile Include="..\..\..\CalcFunction\CalcHelper.cpp" />
+    <ClCompile Include="..\..\..\Config\ConstData.cpp" />
+    <ClCompile Include="..\..\..\Config\ConstVar.cpp" />
+    <ClCompile Include="..\..\..\Config\FaceID.cpp" />
+    <ClCompile Include="..\..\..\Config\JsonBased.cpp" />
+    <ClCompile Include="..\..\..\Config\JsonData.cpp" />
+    <ClCompile Include="..\..\..\Config\LinuxJsonData.cpp" />
+    <ClCompile Include="..\..\..\Config\MeshResult.cpp" />
+    <ClCompile Include="..\..\..\Config\MnnHelper.cpp" />
+    <ClCompile Include="..\..\..\Config\ResVar.cpp" />
+    <ClCompile Include="..\..\..\Config\ShapeConst.cpp" />
+    <ClCompile Include="..\..\..\Config\ShapeVar.cpp" />
+    <ClCompile Include="..\..\..\Config\Tensor.cpp" />
+    <ClCompile Include="..\..\..\Config\TensorHelper.cpp" />
+    <ClCompile Include="..\..\..\Config\TextureResult.cpp" />
+    <ClCompile Include="..\..\..\Debug\DebugTools.cpp" />
+    <ClCompile Include="..\..\..\ExpGen\BsGenerate.cpp" />
+    <ClCompile Include="..\..\..\ExpGen\ExpGen.cpp" />
+    <ClCompile Include="..\..\..\Eyebrow\EyebrowType.cpp" />
+    <ClCompile Include="..\..\..\FileIO\FileIO.cpp" />
+    <ClCompile Include="..\..\..\FileIO\JsonUtils.cpp" />
+    <ClCompile Include="..\..\..\GlogHelper\GLogHelper.cpp" />
+    <ClCompile Include="..\..\..\ImageSim\ImageSimilarity.cpp" />
+    <ClCompile Include="..\..\..\ImageSim\ImageUtils.cpp" />
+    <ClCompile Include="..\..\..\Landmark\Landmark68Wrapper.cpp" />
+    <ClCompile Include="..\..\..\Lighting\Lighting.cpp" />
+    <ClCompile Include="..\..\..\Mapping\Mapping.cpp" />
+    <ClCompile Include="..\..\..\MeshDeform\DTSim.cpp" />
+    <ClCompile Include="..\..\..\MeshDeform\DTSimLandmarkGuide.cpp" />
+    <ClCompile Include="..\..\..\MeshDeform\DTUtilities.cpp" />
+    <ClCompile Include="..\..\..\MeshDeform\LapDeformWrapper.cpp" />
+    <ClCompile Include="..\..\..\MeshDeform\LaplacianDeformation.cpp" />
+    <ClCompile Include="..\..\..\MeshDeform\ReferenceDeform.cpp" />
+    <ClCompile Include="..\..\..\Mesh\MeshCompress.cpp" />
+    <ClCompile Include="..\..\..\Mesh\MeshTools.cpp" />
+    <ClCompile Include="..\..\..\Mesh\ObjLoader.cpp" />
+    <ClCompile Include="..\..\..\Metric\Metric.cpp" />
+    <ClCompile Include="..\..\..\MNN\DeepRec3d.cpp" />
+    <ClCompile Include="..\..\..\MNN\FaceAlign.cpp" />
+    <ClCompile Include="..\..\..\MNN\Facenet.cpp" />
+    <ClCompile Include="..\..\..\MNN\FeatureExtract.cpp" />
+    <ClCompile Include="..\..\..\MNN\KeypointDet.cpp" />
+    <ClCompile Include="..\..\..\MNN\Landmark68.cpp" />
+    <ClCompile Include="..\..\..\MNN\LandmarkTracking.cpp" />
+    <ClCompile Include="..\..\..\MNN\MnnModel.cpp" />
+    <ClCompile Include="..\..\..\MNN\Mtcnn.cpp" />
+    <ClCompile Include="..\..\..\MNN\NRRec3d.cpp" />
+    <ClCompile Include="..\..\..\MNN\Segmentation.cpp" />
+    <ClCompile Include="..\..\..\NRICP\register.cpp" />
+    <ClCompile Include="..\..\..\NRICP\translate.cpp" />
+    <ClCompile Include="..\..\..\OptV2\OptTypeUtils.cpp" />
+    <ClCompile Include="..\..\..\OptV2\OptTypeV2.cpp" />
+    <ClCompile Include="..\..\..\OptV2\OptTypeV3.cpp" />
+    <ClCompile Include="..\..\..\Postprocess\EasyGuijie.cpp" />
+    <ClCompile Include="..\..\..\Postprocess\PostProcess.cpp" />
+    <ClCompile Include="..\..\..\Postprocess\StyleTransfer.cpp" />
+    <ClCompile Include="..\..\..\RecMesh\RecMesh.cpp" />
+    <ClCompile Include="..\..\..\RecMesh\RecShapeMesh.cpp" />
+    <ClCompile Include="..\..\..\RecTexture\RecTexture.cpp" />
+    <ClCompile Include="..\..\..\RigidAlign\icp.cpp" />
+    <ClCompile Include="..\..\..\RigidAlign\test_icp.cpp" />
+    <ClCompile Include="..\..\..\RigidBS\RigidBsGenerate.cpp" />
+    <ClCompile Include="..\..\..\RT\Projection.cpp" />
+    <ClCompile Include="..\..\..\RT\RT.cpp" />
+    <ClCompile Include="..\..\..\Shell\CNodeBH.cpp" />
+    <ClCompile Include="..\..\..\Shell\ComVector3d.cpp" />
+    <ClCompile Include="..\..\..\Shell\ContactTarget.cpp" />
+    <ClCompile Include="..\..\..\Shell\Geometry.cpp" />
+    <ClCompile Include="..\..\..\Shell\MeshDistanceUtils.cpp" />
+    <ClCompile Include="..\..\..\Shell\ShellGenerate.cpp" />
+    <ClCompile Include="..\..\..\Shell\SpatialHashGrid3d.cpp" />
+    <ClCompile Include="..\..\..\Shell\SurfaceMeshReader.cpp" />
+    <ClCompile Include="..\..\..\Shell\TriAnyTopology.cpp" />
+    <ClCompile Include="..\..\..\Shell\Util.cpp" />
+    <ClCompile Include="..\..\..\Skeleton\Skeleton.cpp" />
+    <ClCompile Include="..\..\..\smain\main_tool.cpp" />
+    <ClCompile Include="..\..\..\Solver\BVLSSolver.cpp" />
+    <ClCompile Include="..\..\..\Sysmetric\Sysmetric.cpp" />
+    <ClCompile Include="..\..\..\Test\Auto3dTest.cpp" />
+    <ClCompile Include="..\..\..\Test\BatchGeneration.cpp" />
+    <ClCompile Include="..\..\..\Test\FixRoutine.cpp" />
+    <ClCompile Include="..\..\..\Test\Prepare.cpp" />
+    <ClCompile Include="..\..\..\Test\ReferDefTest.cpp" />
+    <ClCompile Include="..\..\..\Test\TestClass.cpp" />
+    <ClCompile Include="..\..\..\Test\TestTaobaoUtils.cpp" />
+    <ClCompile Include="..\..\..\Test\TestV0.cpp" />
+    <ClCompile Include="..\..\..\Test\TestV1.cpp" />
+    <ClCompile Include="..\..\..\Test\TinyTool.cpp" />
+    <ClCompile Include="..\..\..\Test\TopTransfer.cpp" />
+    <ClCompile Include="..\..\..\VisHelper\ObjDrawer.cpp" />
+    <ClCompile Include="..\..\..\VisHelper\ObjVis.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Auto3d\Auto3DData.h" />
+    <ClInclude Include="..\..\..\Auto3d\Auto3dLoader.h" />
+    <ClInclude Include="..\..\..\Basic\CGPBaseHeader.h" />
+    <ClInclude Include="..\..\..\Basic\DefinedMacro.h" />
+    <ClInclude Include="..\..\..\Basic\MeshHeader.h" />
+    <ClInclude Include="..\..\..\Basic\SafeGuard.h" />
+    <ClInclude Include="..\..\..\Basic\SelfBasic.h" />
+    <ClInclude Include="..\..\..\Basic\ToDst.h" />
+    <ClInclude Include="..\..\..\Beauty\Beauty35.h" />
+    <ClInclude Include="..\..\..\Bvh\Bvh11.hpp" />
+    <ClInclude Include="..\..\..\CalcFunction\CalcHelper.h" />
+    <ClInclude Include="..\..\..\Config\ConstData.h" />
+    <ClInclude Include="..\..\..\Config\ConstVar.h" />
+    <ClInclude Include="..\..\..\Config\FaceID.h" />
+    <ClInclude Include="..\..\..\Config\JsonBased.h" />
+    <ClInclude Include="..\..\..\Config\JsonData.h" />
+    <ClInclude Include="..\..\..\Config\JsonHelper.h" />
+    <ClInclude Include="..\..\..\Config\LinuxJsonData.h" />
+    <ClInclude Include="..\..\..\Config\MeshResult.h" />
+    <ClInclude Include="..\..\..\Config\MnnHelper.h" />
+    <ClInclude Include="..\..\..\Config\ResVar.h" />
+    <ClInclude Include="..\..\..\Config\ShapeConst.h" />
+    <ClInclude Include="..\..\..\Config\ShapeVar.h" />
+    <ClInclude Include="..\..\..\Config\Tensor.h" />
+    <ClInclude Include="..\..\..\Config\TensorHelper.h" />
+    <ClInclude Include="..\..\..\Config\TextureResult.h" />
+    <ClInclude Include="..\..\..\Debug\DebugTools.h" />
+    <ClInclude Include="..\..\..\ExpGen\BsGenerate.h" />
+    <ClInclude Include="..\..\..\ExpGen\ExpGen.h" />
+    <ClInclude Include="..\..\..\Eyebrow\EyebrowType.h" />
+    <ClInclude Include="..\..\..\FileIO\FileIO.h" />
+    <ClInclude Include="..\..\..\FileIO\JsonUtils.h" />
+    <ClInclude Include="..\..\..\GlogHelper\GLogHelper.h" />
+    <ClInclude Include="..\..\..\ImageSim\ImageSimilarity.h" />
+    <ClInclude Include="..\..\..\ImageSim\ImageUtils.h" />
+    <ClInclude Include="..\..\..\Landmark\Landmark68Wrapper.h" />
+    <ClInclude Include="..\..\..\Lighting\Lighting.h" />
+    <ClInclude Include="..\..\..\Mapping\Mapping.h" />
+    <ClInclude Include="..\..\..\MeshDeform\DTSim.h" />
+    <ClInclude Include="..\..\..\MeshDeform\DTSimLandmarkGuide.h" />
+    <ClInclude Include="..\..\..\MeshDeform\DTUtilities.h" />
+    <ClInclude Include="..\..\..\MeshDeform\LapDeformWrapper.h" />
+    <ClInclude Include="..\..\..\MeshDeform\LaplacianDeformation.h" />
+    <ClInclude Include="..\..\..\MeshDeform\ReferenceDeform.h" />
+    <ClInclude Include="..\..\..\Mesh\MeshCompress.h" />
+    <ClInclude Include="..\..\..\Mesh\MeshTools.h" />
+    <ClInclude Include="..\..\..\Mesh\ObjLoader.h" />
+    <ClInclude Include="..\..\..\Metric\Metric.h" />
+    <ClInclude Include="..\..\..\MNN\DeepRec3d.h" />
+    <ClInclude Include="..\..\..\MNN\FaceAlign.h" />
+    <ClInclude Include="..\..\..\MNN\Facenet.h" />
+    <ClInclude Include="..\..\..\MNN\FeatureExtract.h" />
+    <ClInclude Include="..\..\..\MNN\KeypointDet.h" />
+    <ClInclude Include="..\..\..\MNN\Landmark68.h" />
+    <ClInclude Include="..\..\..\MNN\LandmarkTracking.h" />
+    <ClInclude Include="..\..\..\MNN\MnnModel.h" />
+    <ClInclude Include="..\..\..\MNN\Mtcnn.h" />
+    <ClInclude Include="..\..\..\MNN\NRRec3d.h" />
+    <ClInclude Include="..\..\..\MNN\Segmentation.h" />
+    <ClInclude Include="..\..\..\NRICP\common.h" />
+    <ClInclude Include="..\..\..\NRICP\demo.h" />
+    <ClInclude Include="..\..\..\NRICP\dis.h" />
+    <ClInclude Include="..\..\..\NRICP\MyKDtree.h" />
+    <ClInclude Include="..\..\..\NRICP\register.h" />
+    <ClInclude Include="..\..\..\NRICP\residual.h" />
+    <ClInclude Include="..\..\..\NRICP\translate.h" />
+    <ClInclude Include="..\..\..\NRICP\vec3.h" />
+    <ClInclude Include="..\..\..\OptV2\OptTypeUtils.h" />
+    <ClInclude Include="..\..\..\OptV2\OptTypeV2.h" />
+    <ClInclude Include="..\..\..\OptV2\OptTypeV3.h" />
+    <ClInclude Include="..\..\..\Postprocess\EasyGuijie.h" />
+    <ClInclude Include="..\..\..\Postprocess\PostProcess.h" />
+    <ClInclude Include="..\..\..\Postprocess\StyleTransfer.h" />
+    <ClInclude Include="..\..\..\RecMesh\RecMesh.h" />
+    <ClInclude Include="..\..\..\RecMesh\RecShapeMesh.h" />
+    <ClInclude Include="..\..\..\RecTexture\RecTexture.h" />
+    <ClInclude Include="..\..\..\RigidAlign\icp.h" />
+    <ClInclude Include="..\..\..\RigidBS\RigidBsGenerate.h" />
+    <ClInclude Include="..\..\..\RT\Projection.h" />
+    <ClInclude Include="..\..\..\RT\RT.h" />
+    <ClInclude Include="..\..\..\Shader\shader.h" />
+    <ClInclude Include="..\..\..\Shell\CNodeBH.h" />
+    <ClInclude Include="..\..\..\Shell\ComVector3d.h" />
+    <ClInclude Include="..\..\..\Shell\ContactTarget.h" />
+    <ClInclude Include="..\..\..\Shell\Geometry.h" />
+    <ClInclude Include="..\..\..\Shell\MeshDistanceUtils.h" />
+    <ClInclude Include="..\..\..\Shell\ShellGenerate.h" />
+    <ClInclude Include="..\..\..\Shell\SpatialHashGrid3d.h" />
+    <ClInclude Include="..\..\..\Shell\SurfaceMeshReader.h" />
+    <ClInclude Include="..\..\..\Shell\TriAnyTopology.h" />
+    <ClInclude Include="..\..\..\Shell\Util.h" />
+    <ClInclude Include="..\..\..\Skeleton\Skeleton.h" />
+    <ClInclude Include="..\..\..\Solver\BVLSSolver.h" />
+    <ClInclude Include="..\..\..\Sysmetric\Sysmetric.h" />
+    <ClInclude Include="..\..\..\Test\Auto3dTest.h" />
+    <ClInclude Include="..\..\..\Test\BatchGeneration.h" />
+    <ClInclude Include="..\..\..\Test\FixRoutine.h" />
+    <ClInclude Include="..\..\..\Test\Prepare.h" />
+    <ClInclude Include="..\..\..\Test\ReferDefTest.h" />
+    <ClInclude Include="..\..\..\Test\Test.h" />
+    <ClInclude Include="..\..\..\Test\TestClass.h" />
+    <ClInclude Include="..\..\..\Test\TinyTool.h" />
+    <ClInclude Include="..\..\..\Test\TopTransfer.h" />
+    <ClInclude Include="..\..\..\VisHelper\ObjDrawer.h" />
+    <ClInclude Include="..\..\..\VisHelper\ObjVis.h" />
+    <ClInclude Include="..\..\..\VisHelper\VisHeader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\config.json" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

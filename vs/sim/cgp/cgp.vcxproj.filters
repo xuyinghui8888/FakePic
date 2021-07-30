@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Mesh">
+      <UniqueIdentifier>{85b66664-2926-4942-9c7c-927ba0d7ab9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GlogHelper">
+      <UniqueIdentifier>{ad98d1f6-ee2c-4c27-92a5-98745aea34d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Basic">
+      <UniqueIdentifier>{ef8cc1d8-f9d3-4375-89f1-59646b4db66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MeshDeform">
+      <UniqueIdentifier>{8b7e18ba-053c-4006-804e-5035e27c739b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileIO">
+      <UniqueIdentifier>{291a4a08-ba83-44ec-a0ff-35835e47a2ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{3081b5e0-32e0-4d2d-981f-811f3ff54362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisHelper">
+      <UniqueIdentifier>{06c5c490-e459-4f41-9851-a7c60b02ea96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RT">
+      <UniqueIdentifier>{04f419b4-2388-4045-ab36-d07cf463ce47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{6efbcee3-cd24-4c53-9c00-7151993b0575}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NRICP">
+      <UniqueIdentifier>{fd94ee3d-bdb0-4b47-8133-7fbc0e0b800f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RigidAlign">
+      <UniqueIdentifier>{9b0e01ea-9e26-4e36-af1d-68b16952af1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="smain">
+      <UniqueIdentifier>{2c658412-5015-4cc2-9900-14852f39764b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RecMesh">
+      <UniqueIdentifier>{6bc649ed-57bb-4c61-91b8-0c074d1befde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RecTexture">
+      <UniqueIdentifier>{7e878617-14a0-40fb-81a6-81b46ebe033b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sysmetric">
+      <UniqueIdentifier>{6af15350-a7d6-40bc-bae3-c84e0bc91090}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CalcFunction">
+      <UniqueIdentifier>{ffc4602a-ac17-41d8-9fcc-3ed3ba9dd220}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Metric">
+      <UniqueIdentifier>{2a1bd435-8c9e-4cf9-b674-8b84ae8b21c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MNN">
+      <UniqueIdentifier>{66f21a21-b22b-4cfb-bf11-2858e258c81c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Postprocess">
+      <UniqueIdentifier>{8fd2ad8b-7468-4114-9f57-dd75331409c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{8d0c781c-dfca-4f60-8357-c18b8d087359}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test">
+      <UniqueIdentifier>{289aa67d-1340-4610-9bde-109a189db894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExpGen">
+      <UniqueIdentifier>{5a0eb164-67fd-474f-afff-6d77c9853b69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Skeleton">
+      <UniqueIdentifier>{0dc14b0e-173d-41e1-8a3a-5f0a1207a65e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Solver">
+      <UniqueIdentifier>{a201eb10-4372-4f94-8c78-9e3400f1ea88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OptV2">
+      <UniqueIdentifier>{951b2b8c-aa66-4c70-a8e6-fff0856f5c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Eyebrow">
+      <UniqueIdentifier>{744ae6dd-7db2-498e-be77-3e9ace8e1f5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImageSim">
+      <UniqueIdentifier>{595ffd78-1ed3-40e7-bf6a-1ffd98dbd2f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Beauty">
+      <UniqueIdentifier>{6abfdc87-ceec-41e1-812e-065f9e7ed006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Landmark">
+      <UniqueIdentifier>{cdc856ec-dffb-41e3-92df-c2572edca633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RigidBS">
+      <UniqueIdentifier>{b112ea68-992f-43a2-ada8-03eef0a54e3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mapping">
+      <UniqueIdentifier>{d6fb7e22-37b2-40cd-9feb-bd22d4cbc87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Auto3d">
+      <UniqueIdentifier>{502b8cf5-02d5-4168-a357-771b9ec4bf80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lighting">
+      <UniqueIdentifier>{b9f582ad-5b96-4e3d-b547-f4f98ba46567}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shell">
+      <UniqueIdentifier>{d840d8da-ea50-41f6-9a99-d478eaeae142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Bvh">
+      <UniqueIdentifier>{58ab362c-3348-4594-a082-49327424d248}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Mesh\MeshCompress.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GlogHelper\GLogHelper.cpp">
+      <Filter>GlogHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Mesh\ObjLoader.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Basic\SafeGuard.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MeshDeform\LaplacianDeformation.cpp">
+      <Filter>MeshDeform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MeshDeform\DTSim.cpp">
+      <Filter>MeshDeform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FileIO\FileIO.cpp">
+      <Filter>FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\VisHelper\ObjDrawer.cpp">
+      <Filter>VisHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\VisHelper\ObjVis.cpp">
+      <Filter>VisHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RT\RT.cpp">
+      <Filter>RT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\NRICP\register.cpp">
+      <Filter>NRICP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\NRICP\translate.cpp">
+      <Filter>NRICP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RigidAlign\icp.cpp">
+      <Filter>RigidAlign</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RigidAlign\test_icp.cpp">
+      <Filter>RigidAlign</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RecMesh\RecMesh.cpp">
+      <Filter>RecMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RecTexture\RecTexture.cpp">
+      <Filter>RecTexture</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Config\TextureResult.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Config\MeshResult.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Config\JsonData.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Config\JsonBased.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Config\Tensor.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Sysmetric\Sysmetric.cpp">
+      <Filter>Sysmetric</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Config\ConstData.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Config\TensorHelper.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\CalcFunction\CalcHelper.cpp">
+      <Filter>CalcFunction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Metric\Metric.cpp">
+      <Filter>Metric</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MNN\KeypointDet.cpp">
+      <Filter>MNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MNN\MnnModel.cpp">
+      <Filter>MNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MNN\Segmentation.cpp">
+      <Filter>MNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Config\MnnHelper.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Config\ConstVar.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Config\ResVar.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MNN\Mtcnn.cpp">
+      <Filter>MNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MNN\Facenet.cpp">
+      <Filter>MNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MNN\DeepRec3d.cpp">
+      <Filter>MNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MNN\Landmark68.cpp">
+      <Filter>MNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MNN\FeatureExtract.cpp">
+      <Filter>MNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MNN\FaceAlign.cpp">
+      <Filter>MNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Postprocess\PostProcess.cpp">
+      <Filter>Postprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Test\Prepare.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Config\FaceID.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RT\Projection.cpp">
+      <Filter>RT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Test\TinyTool.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\smain\main_tool.cpp">
+      <Filter>smain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Mesh\MeshTools.cpp">
+      <Filter>Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExpGen\ExpGen.cpp">
+      <Filter>ExpGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MeshDeform\DTSimLandmarkGuide.cpp">
+      <Filter>MeshDeform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MeshDeform\DTUtilities.cpp">
+      <Filter>MeshDeform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Skeleton\Skeleton.cpp">
+      <Filter>Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ExpGen\BsGenerate.cpp">
+      <Filter>ExpGen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Solver\BVLSSolver.cpp">
+      <Filter>Solver</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OptV2\OptTypeV2.cpp">
+      <Filter>OptV2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OptV2\OptTypeUtils.cpp">
+      <Filter>OptV2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\OptV2\OptTypeV3.cpp">
+      <Filter>OptV2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Eyebrow\EyebrowType.cpp">
+      <Filter>Eyebrow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImageSim\ImageSimilarity.cpp">
+      <Filter>ImageSim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ImageSim\ImageUtils.cpp">
+      <Filter>ImageSim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Test\TestV0.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Test\TestV1.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MNN\LandmarkTracking.cpp">
+      <Filter>MNN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Debug\DebugTools.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Test\FixRoutine.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Beauty\Beauty35.cpp">
+      <Filter>Beauty</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Landmark\Landmark68Wrapper.cpp">
+      <Filter>Landmark</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Basic\ToDst.cpp">
+      <Filter>Basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RigidBS\RigidBsGenerate.cpp">
+      <Filter>RigidBS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\FileIO\JsonUtils.cpp">
+      <Filter>FileIO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Test\TopTransfer.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Mapping\Mapping.cpp">
+      <Filter>Mapping</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MeshDeform\LapDeformWrapper.cpp">
+      <Filter>MeshDeform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Test\EazyGuijie.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MeshDeform\ReferenceDeform.cpp">
+      <Filter>MeshDeform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Auto3d\Auto3dLoader.cpp">
+      <Filter>Auto3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Test\Auto3dTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Auto3d\Auto3DData.cpp">
+      <Filter>Auto3d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Test\ReferDefTest.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Lighting\Lighting.cpp">
+      <Filter>Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shell\ShellGenerate.cpp">
+      <Filter>Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shell\TriAnyTopology.cpp">
+      <Filter>Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shell\ComVector3d.cpp">
+      <Filter>Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shell\SurfaceMeshReader.cpp">
+      <Filter>Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shell\SpatialHashGrid3d.cpp">
+      <Filter>Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shell\ContactTarget.cpp">
+      <Filter>Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shell\Util.cpp">
+      <Filter>Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shell\Geometry.cpp">
+      <Filter>Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shell\MeshDistanceUtils.cpp">
+      <Filter>Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Shell\CNodeBH.cpp">
+      <Filter>Shell</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Bvh\Bvh11.cpp">
+      <Filter>Bvh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Test\BatchGeneration.cpp">
+      <Filter>Test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Mesh\MeshCompress.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Basic\DefinedMacro.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GlogHelper\GLogHelper.h">
+      <Filter>GlogHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Mesh\ObjLoader.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Basic\SafeGuard.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Basic\CGPBaseHeader.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MeshDeform\LaplacianDeformation.h">
+      <Filter>MeshDeform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MeshDeform\DTSim.h">
+      <Filter>MeshDeform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\FileIO\FileIO.h">
+      <Filter>FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shader\shader.h">
+      <Filter>Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\VisHelper\VisHeader.h">
+      <Filter>VisHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\VisHelper\ObjDrawer.h">
+      <Filter>VisHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\VisHelper\ObjVis.h">
+      <Filter>VisHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RT\RT.h">
+      <Filter>RT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Test\Test.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\NRICP\residual.h">
+      <Filter>NRICP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\NRICP\translate.h">
+      <Filter>NRICP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\NRICP\vec3.h">
+      <Filter>NRICP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\NRICP\common.h">
+      <Filter>NRICP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\NRICP\demo.h">
+      <Filter>NRICP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\NRICP\dis.h">
+      <Filter>NRICP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\NRICP\MyKDtree.h">
+      <Filter>NRICP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\NRICP\register.h">
+      <Filter>NRICP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RigidAlign\icp.h">
+      <Filter>RigidAlign</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RecMesh\RecMesh.h">
+      <Filter>RecMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RecTexture\RecTexture.h">
+      <Filter>RecTexture</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\MeshResult.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\TextureResult.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\JsonData.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\DataStructureHeader.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\JsonBased.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\Tensor.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Sysmetric\Sysmetric.h">
+      <Filter>Sysmetric</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\ConstData.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\JsonHelper.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\TensorHelper.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\CalcFunction\CalcHelper.h">
+      <Filter>CalcFunction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Metric\Metric.h">
+      <Filter>Metric</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MNN\KeypointDet.h">
+      <Filter>MNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MNN\MnnModel.h">
+      <Filter>MNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MNN\Segmentation.h">
+      <Filter>MNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\MnnHelper.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\ConstVar.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\ResVar.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MNN\LandmarkTracking.h">
+      <Filter>MNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MNN\Mtcnn.h">
+      <Filter>MNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MNN\Facenet.h">
+      <Filter>MNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MNN\DeepRec3d.h">
+      <Filter>MNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MNN\Landmark68.h">
+      <Filter>MNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MNN\FeatureExtract.h">
+      <Filter>MNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MNN\FaceAlign.h">
+      <Filter>MNN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Postprocess\PostProcess.h">
+      <Filter>Postprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Test\Prepare.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Config\FaceID.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RT\Projection.h">
+      <Filter>RT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Test\TinyTool.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Mesh\MeshTools.h">
+      <Filter>Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExpGen\ExpGen.h">
+      <Filter>ExpGen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Basic\MeshHeader.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MeshDeform\DTSimLandmarkGuide.h">
+      <Filter>MeshDeform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MeshDeform\DTUtilities.h">
+      <Filter>MeshDeform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Skeleton\Skeleton.h">
+      <Filter>Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ExpGen\BsGenerate.h">
+      <Filter>ExpGen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Solver\BVLSSolver.h">
+      <Filter>Solver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\OptV2\OptTypeV2.h">
+      <Filter>OptV2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\OptV2\OptTypeUtils.h">
+      <Filter>OptV2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\OptV2\OptTypeV3.h">
+      <Filter>OptV2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Eyebrow\EyebrowType.h">
+      <Filter>Eyebrow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ImageSim\ImageSimilarity.h">
+      <Filter>ImageSim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ImageSim\ImageUtils.h">
+      <Filter>ImageSim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Debug\DebugTools.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Test\FixRoutine.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Beauty\Beauty35.h">
+      <Filter>Beauty</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Landmark\Landmark68Wrapper.h">
+      <Filter>Landmark</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Basic\ToDst.h">
+      <Filter>Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RigidBS\RigidBsGenerate.h">
+      <Filter>RigidBS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\FileIO\JsonUtils.h">
+      <Filter>FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Test\TopTransfer.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Mapping\Mapping.h">
+      <Filter>Mapping</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MeshDeform\LapDeformWrapper.h">
+      <Filter>MeshDeform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Test\EazyGuijie.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MeshDeform\ReferenceDeform.h">
+      <Filter>MeshDeform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Auto3d\Auto3dLoader.h">
+      <Filter>Auto3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Test\Auto3dTest.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Auto3d\Auto3DData.h">
+      <Filter>Auto3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Test\ReferDefTest.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lighting\Lighting.h">
+      <Filter>Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shell\ShellGenerate.h">
+      <Filter>Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shell\TriAnyTopology.h">
+      <Filter>Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shell\ComVector3d.h">
+      <Filter>Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shell\SurfaceMeshReader.h">
+      <Filter>Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shell\SpatialHashGrid3d.h">
+      <Filter>Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shell\ContactTarget.h">
+      <Filter>Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shell\Geometry.h">
+      <Filter>Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shell\Util.h">
+      <Filter>Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shell\MeshDistanceUtils.h">
+      <Filter>Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Shell\CNodeBH.h">
+      <Filter>Shell</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Bvh\Bvh11.hpp">
+      <Filter>Bvh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Test\BatchGeneration.h">
+      <Filter>Test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\config.json">
+      <Filter>smain</Filter>
+    </None>
+  </ItemGroup>
+</Project>
