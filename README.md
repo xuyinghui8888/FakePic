@@ -40,7 +40,4 @@ enum class TensorType
 };
 ```
 
-# Copyright
 
-Copyright (c) 2019 Alibaba Group Holding Limited
-Author: Zhao Haiming (Suyu)
